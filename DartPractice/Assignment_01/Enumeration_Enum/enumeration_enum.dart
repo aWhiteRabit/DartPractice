@@ -1,15 +1,14 @@
+void main() {
+ for (Status x in Status.values){   //x is a variable;
+   print(x);
+ }
+}
+
 enum Status {
   none,
   running,
   stopped,
   paused
 }
-void main() {
-  print(Status.values);
-  Status.values.forEach((v) => print('value: $v, index: ${v.index}'));
-  print('running: ${Status.running}, ${Status.running.index}');
-  print('running index: ${Status.values[1]}');
-}
-
 
 //need to learn more;
